@@ -1,0 +1,39 @@
+body{
+    background: #0f172a;
+    color:white;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    padding:30px;
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+}
+.light-mode .navbar a{
+    color:black;
+}
+#themeBtn{
+    height:50px;
+    width:50px;
+    border-radius:50px;
+    border:none;
+    font-size:30px;
+    cursor:pointer;
+    background-color: #172443;
+}
+.start-btn{
+    padding:20px 50px;
+    border:none;
+    border-radius:50px;
+    font-size:24px;
+    color:white;
+    cursor:pointer;
+    background-color:rgb(67, 67, 151);
+}
+.light-mode{
+    color:black;
+    background:white;
+}
