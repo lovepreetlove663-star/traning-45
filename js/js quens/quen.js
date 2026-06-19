@@ -177,61 +177,151 @@
 // console.log(isEven(5));    //false
 
 // 27. Write a function calculator that takes two numbers and an operator (+, -, *, /) and returns the result.
-function calculator(a,b,operator){
-    switch(operator){
-        case"+":return a+b;
-         case"-":return a-b;
-          case"*":return a*b;
-           case"/":return a/b;
-        }
-}
-console.log(calculator(10,5,"*"));   //50
+// function calculator(a,b,operator){
+//     switch(operator){
+//         case"+":return a+b;
+//          case"-":return a-b;
+//           case"*":return a*b;
+//            case"/":return a/b;
+//         }
+// }
+// console.log(calculator(10,5,"*"));   //50
+
 // 28. Write a function that takes another function as a callback and calls it after logging "Starting task...".
 
 // 29. Create an array of 5 fruit names. Log the first and last item using their index.
+// let fruits=["apple","banana","mango","lichi","grapes"]
+// console.log(fruits[0]);
+// console.log(fruits[4]);           //apple grapes
 
 // 30. Find the length of an array and log the last element using the length property.
+// let arr=[10,20,30,40]
+// console.log(arr.lenth);
+// console.log(arr(arr.length-1));
 
 // 31. Use push() to add two items to the end of an array and log the updated array.
+// let days=["sunday","monday","tuesday"]
+// days.push("wednessday");
+// days.push("thursday");
+// console.log(days);      //['sunday','monday','tuesday','wednessday','thursday']
 
 // 32. Use pop() to remove the last item from an array and log both the removed item and the updated array.
+// let fruits = ["mango", "orange", "apple", "lichi"];
+
+// let removedItem = fruits.pop();
+
+// console.log(removedItem);
+// console.log(fruits);    //lichi  ['mango','orange','apple']
 
 // 33. Remove the first item and add a new item at the beginning. Log the array after each step.
+// let fruits= ["mango", "orange", "apple", "lichi"];
+// fruits.shift();
+// console.log(fruits);           //['orange','apple','lochi']
+// fruits.unshift("banana");
+// console.log(fruits);            //['banana','oramgr','apple','lichi']
 
 // 34. Use forEach() to loop through an array of numbers and log each number multiplied by 2.
+// let numbers=[1,2,3,4,5];
+// numbers.forEach(function(num){
+//     console.log(num*2);
+// });                    //2 4 6 8 10
 
 // 35. Use map() to create a new array where each number in [1, 2, 3, 4, 5] is multiplied by 10.
 
 // 36. Use filter() to create a new array of only even numbers from [1, 2, 3, 4, 5, 6, 7, 8].
+// let number=[1, 2, 3, 4, 5, 6, 7, 8];
+// let even=number.filter(num=>num%2===0);
+// console.log(even);            //[2,4,6,8]
 
 // 37. Use reduce() to calculate the total sum of [10, 20, 30, 40, 50].
+//  let number=[10, 20, 30, 40, 50];
+// let total=number.reduce((sum,num)=>sum+num,0);
+//  console.log(total)                  //150
 
 // 38. Use find() to get the first number greater than 15 from [5, 10, 18, 22, 3].
+//  let number=[5, 10, 18, 22, 3];
+// let result=number.find(num=>num>15);
+//  console.log(result);             //18
 
 // 39. Use some() to check if any number in [1, 3, 5, 7, 8] is even.
+// let number=[1, 3, 5, 7, 8];
+// let result=number.some(num=>num%2===0);
+//  console.log(result); //true
 
 // 40. Use every() to check if all values in [2, 4, 6, 8] are even.
+// let number=[2, 4, 6, 8];
+// let result=number.every(num=>num%2===0);
+//  console.log(result);   //true
 
 // 41. Create a student object with properties: name, age, grade, and passed. Log the whole object.
+// let student={
+//     name:"suneha",
+//     age:20,
+//     grade:"A",
+//     passed:true,
+// };
+// console.log(student);
+//  { name: 'suneha', age: 20, grade: 'A', passed: true }
 
 // 42. Access each property of the student object using both dot notation and bracket notation.
+// console.log(student);     
+// let student={
+//      name:"suneha",
+//      age:20,
+//      grade:"A",
+//      passed:true,
+//  };
+//  console.log(student.name);    //suneha
+//  console.log(student["name"]); //suneha
 
 // 43. Add a new property school to the student object after it is created. Log the updated object.
+// let student={
+// name:"jass",
+// age:19,
+// };
+// student.school="ABC School";
+// console.log(student);    //{ name: 'jass', age: 19, school: 'ABC School' }
 
 // 44. Use Object.keys() on the student object and log all the keys.
+// let student={
+// name:"jass",
+//  age:19,
+//  grade:"A"
+//  };
+//  console.log(Object.keys(student));   //[ 'name', 'age', 'grade' ]
 
 // 45. Use Object.values() on the student object and log all the values.
+// let student={
+// name:"love",
+//  age:21,
+//  grade:"A"
+//  };
+//  console.log(Object.values(student));    //[ 'love', 21, 'A' ]
 
 // 46. Use Object.entries() to print all keys and values.
+let student={
+name:"love",
+ age:21,
+ grade:"A"
+ };
+ console.log(Object.entries(student));    //[ [ 'name', 'love' ], [ 'age', 21 ], [ 'grade', 'A' ] ]
 
 // 47. Write a function checkObject(obj) that returns:
 // - "Frozen" if the object is frozen
 // - "Sealed" if the object is sealed but not frozen
 // - "Normal" otherwise
+function checkObject(obj){
+if(Object.isFrozen(obj)){
+    return"Frozen";
+}else if(Object.isSealed(obj)){
+    return"sealed";
+}else{
+    return"Normal";
+}
+}    //[ [ 'name', 'love' ], [ 'age', 21 ], [ 'grade', 'A' ] ]
 
 // 48. Write a function that returns the number of properties in an object without using Object.keys().
 
 // 49. Using Object.entries(), write a function that returns the key whose value matches the given value.
 
 // 50. Compare two objects using Object.entries() and determine whether they have exactly the same keys and values.
-// 51.

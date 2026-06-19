@@ -2,19 +2,19 @@
 // let date=`${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`
 // console.log(date)
 
- let now= new Date();
- let date= now.getDate();
- let month=now.getMonth()+1;
-//month=5+1;
-let year= now.getFullYear();
+//  let now= new Date();
+//  let date= now.getDate();
+//  let month=now.getMonth()+1;
+// //month=5+1;
+// let year= now.getFullYear();
 
- let hours=now.getHours();
- let minutes=now.getMinutes();
- let seconds=now.getSeconds();
- console.log(date + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds);
- console.log(hours + ":" + minutes + ":" + seconds);
+//  let hours=now.getHours();
+//  let minutes=now.getMinutes();
+//  let seconds=now.getSeconds();
+//  console.log(date + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds);
+//  console.log(hours + ":" + minutes + ":" + seconds);
 
-// let now = new Date;
+// let now = new Date; 
 // console.log(now.getDate());
 // console.log(now.getDate());
 // console.log(now.getMonth());

@@ -6,26 +6,25 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="#" method="get">
     <h1>Students Information</h1>
     <P>Welcome to our student information page.Here you can fill the registration form and view the list of students.</P>
-    <nav>
-    </nav>
-    <a href="HOME">Home|</a>
-    <a href="Register">Register|</a>
-    <a href="Students">Students|</a>
-    <a href="About">About</a>
-    </nav>
-    <br><br>
+     <div>
+    <a href="#">Home|</a>
+    <a href="#">Register|</a>
+    <a href="#">Students|</a>
+    <a href="#">About</a>
+        </div>
     <h2>1. Student Registration Form</h2>
     <p>Please fill in the details below to register</p>
     <label for="Full Name">Full Name:</label>
-    <input type="text"id="Full Name"="Full Name">
+    <input type="text"id ="Full Name"name="Full Name">
     <br><br>
     <label for="Email">Email:</label>
-    <input type="text"id="Email"="Email">
+    <input type="text"id="Email"name="Email">
     <br><br>
     <label for="Roll Number">Roll Number:</label>
-    <input type="number"id="Roll Number"="Roll Number">
+    <input type="number"id="Roll Number"name="Roll Number">
     <br><br>
     <label for="Course">Course:</label>
     <select id="course">
@@ -35,22 +34,28 @@
         <option value="AI/ML">AI/ML</option>
     </select>
     <br><br>
-    <label for="Gender">Gender:</label>
-    <input type="radio"name="female"value="Female"Female
-    <input type="radio"name="male"value="male"male
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" value="Male">
+    Male
+</label>
+
+<label>
+    <input type="radio" name="gender" value="Female">
+    Female
+</label>
     <br><br>
 <label for="Date of birth">Date of Birth:</label>
 <input type="date"id="date of birth"name="date of birth">
 <br><br>
 <label for="Address">Address:</label>
-    <input type="text"id="address"="Address>
+    <input type="text"id="address"name="Address">
     <br><br>
-   <button>Submit</button>
-   <button>Restart</button> 
+   <button type="Submit">Submit</button>
+   <button type="Reset">Reset</button> 
    <hr>
    <h2>2.List of Students</h2>
    <p>Below is the list of registered students.</p>
-   <table border="1">
+   <table border="5" cellpadding="5">
     <tr>
         <th>No.</th>
         <th>Name</th>
@@ -98,6 +103,7 @@
     </ul>
     <p>We use proper labels for form fields and table headers for better accessibility.</p>
     <hr>
-    <p>&copy;2024 Student Information Page</p>
+    <p>&copy2024 Student Information Page</p>
+    </form>
 </body>
 </html>

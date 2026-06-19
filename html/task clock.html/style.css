@@ -24,10 +24,13 @@
 }
 .date{
     font-size: 30px;
-    gap:10px;
+    gap:40px;
 }
 .date h1{
 text-align: center;
+}
+#day{
+    text-align: center;
 }
 #month{
     text-align: center;
